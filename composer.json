@@ -1,0 +1,67 @@
+{
+	"repositories": [
+		{ "type": "vcs", "url": "file://../../files/repos/typo3_src"},
+		{ "type": "vcs", "url": "git@github.com:smichaelsen/typo3-theme-foundation-apps.git" },
+		{ "type": "vcs", "url": "git@github.com:TYPO3-coreapi/ext-coreapi.git" },
+		{ "type": "vcs", "url": "git@github.com:FluidTYPO3/fluidcontent.git" },
+		{ "type": "vcs", "url": "git@github.com:FluidTYPO3/fluidpages.git" },
+		{ "type": "vcs", "url": "git@github.com:FluidTYPO3/flux.git" },
+		{ "type": "vcs", "url": "git@github.com:FluidTYPO3/vhs.git" }
+	],
+	"config": {
+		"vendor-dir": "Packages/Libraries",
+		"bin-dir": "bin"
+	},
+	"require": {
+		"typo3/cms": "dev-master",
+		"etobi/coreapi": "*",
+		"fluidtypo3/fluidpages": "dev-master",
+		"fluidtypo3/flux": "dev-master",
+		"fluidtypo3/vhs": "dev-master",
+		"smichaelsen/theme-foundation-apps": "dev-master",
+		"doctrine/annotations": "~1.2"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.3.*@dev",
+		"phpunit/phpunit": "~4.4.0",
+		"phpmd/phpmd" : "@stable",
+		"twbs/bootstrap": "3.3.*",
+		"fortawesome/font-awesome": "4.2.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Etobi\\CoreAPI\\": "typo3conf/ext/coreapi/Classes",
+			"TYPO3\\CMS\\Core\\Tests\\": "typo3/sysext/core/Tests",
+			"Stocked\\Stocked\\": "typo3conf/ext/stocked/Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\CMS\\Backend\\Tests\\": "typo3/sysext/backend/Tests/",
+			"TYPO3\\CMS\\Belog\\Tests\\": "typo3/sysext/belog/Tests/",
+			"TYPO3\\CMS\\Beuser\\Tests\\": "typo3/sysext/beuser/Tests/",
+			"TYPO3\\CMS\\Core\\Tests\\": "typo3/sysext/core/Tests/",
+			"TYPO3\\CMS\\Dbal\\Tests\\": "typo3/sysext/dbal/Tests/",
+			"TYPO3\\CMS\\Documentation\\Tests\\": "typo3/sysext/documentation/Tests/",
+			"TYPO3\\CMS\\Extbase\\Tests\\": "typo3/sysext/extbase/Tests/",
+			"TYPO3\\CMS\\Extensionmanager\\Tests\\": "typo3/sysext/extensionmanager/Tests/",
+			"TYPO3\\CMS\\Felogin\\Tests\\": "typo3/sysext/felogin/Tests/",
+			"TYPO3\\CMS\\Fluid\\Tests\\": "typo3/sysext/fluid/Tests/",
+			"TYPO3\\CMS\\Form\\Tests\\": "typo3/sysext/form/Tests/",
+			"TYPO3\\CMS\\Frontend\\Tests\\": "typo3/sysext/frontend/Tests/",
+			"TYPO3\\CMS\\Impexp\\Tests\\": "typo3/sysext/impexp/Tests/",
+			"TYPO3\\CMS\\IndexedSearch\\Tests\\": "typo3/sysext/indexed_search/Tests/",
+			"TYPO3\\CMS\\Install\\Tests\\": "typo3/sysext/install/Tests/",
+			"TYPO3\\CMS\\Lang\\Tests\\": "typo3/sysext/lang/Tests/",
+			"TYPO3\\CMS\\Lowlevel\\Tests\\": "typo3/sysext/lowlevel/Tests/",
+			"TYPO3\\CMS\\Mediace\\Tests\\": "typo3/sysext/mediace/Tests/",
+			"TYPO3\\CMS\\Recordlist\\Tests\\": "typo3/sysext/recordlist/Tests/",
+			"TYPO3\\CMS\\Reports\\Tests\\": "typo3/sysext/reports/Tests/",
+			"TYPO3\\CMS\\Rsaauth\\Tests\\": "typo3/sysext/rsaauth/Tests/",
+			"TYPO3\\CMS\\Saltedpasswords\\Tests\\": "typo3/sysext/saltedpasswords/Tests/",
+			"TYPO3\\CMS\\Scheduler\\Tests\\": "typo3/sysext/scheduler/Tests/",
+			"TYPO3\\CMS\\Sv\\Tests\\": "typo3/sysext/sv/Tests/",
+			"TYPO3\\CMS\\Workspaces\\Tests\\": "typo3/sysext/workspaces/Tests/"
+		}
+	}
+}

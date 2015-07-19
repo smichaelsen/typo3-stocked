@@ -1,0 +1,19 @@
+#############################
+# TYPO3 CMS Base Distribution
+#############################
+Packages
+node_modules
+fileadmin
+uploads
+bin
+index.php
+typo3
+typo3_src
+typo3temp
+typo3conf/AdditionalConfiguration.php
+typo3conf/ENABLE_INSTALL_TOOL
+typo3conf/deprecation*.log
+typo3conf/l10n
+typo3conf/ext
+.sass-cache
+.htaccess
